@@ -1,0 +1,36 @@
+﻿<div ng-controller="EditController">
+    <form ng-show="isEditable()">
+        <fieldset>
+            <div class="form-group">
+                <label for="ProductName">
+                    Product Name
+                </label>
+                <input id="ProductName" type="text" ng-model="edit.product.product_name" required class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="ProductPrice">
+                    Product Price
+                </label>
+                <input id="ProductPrice" type="number" ng-model="edit.product.product_price" required min="" max=""
+                       class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="Stock">
+                    Product Stock
+                </label>
+                <input id="Stock" type="number"
+                       ng-model="edit.product.product_stock"
+                       required min="" max=""
+                       class="form-control" />
+            </div>
+            <button class="btn btn-default"
+                    ng-click="save()">
+                Save
+            </button>
+            <button class="btn btn-default"
+                    ng-click="cancel()">
+                Cancel
+            </button>
+        </fieldset>
+    </form>
+</div>

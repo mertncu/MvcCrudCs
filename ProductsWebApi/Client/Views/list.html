@@ -1,0 +1,32 @@
+﻿<div ng-controller="ListController">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product Id</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Stock</th>
+                <th></th>
+            </tr>
+
+        </thead>
+        <tr ng-repeat="product in data">
+            <td>{{product.product_id}}</td>
+            <td>{{product.product_name}}</td>
+            <td>{{product.product_price}}</td>
+            <td>{{product.product_stock}}</td>
+            <td>
+                <a class="btn btn-default" href="#/details/{{product.product_id}}">
+                    Details
+                </a>
+                <button class="btn btn-default" ng-click="delete(product)">
+                    Delete
+                </button>
+            </td>
+
+        </tr>
+    </table>
+    <button class="btn btn-default" ng-click="create()">Create</button>
+    <div ng-include="'/Client/views/edit.html'">
+    </div>
+</div>
