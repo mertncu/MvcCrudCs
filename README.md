@@ -33,9 +33,7 @@ Follow the steps below to run the project on your local environment.
 
     ```bash
    Install-Package angularjs -Version 1.8.2
-    ```
-
-        ```bash
+    
    Install-Package angularjs.Route -Version 1.8.2
     ```
 
