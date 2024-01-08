@@ -29,12 +29,17 @@ Follow the steps below to run the project on your local environment.
     Update-Database
     ```
 
-4. Install Angular dependencies by running the following command in the terminal (inside the project folder):
+4. Install Angular.JS Core and Route:
 
     ```bash
-    cd ClientApp
-    npm install
+   Install-Package angularjs -Version 1.8.2
     ```
+
+        ```bash
+   Install-Package angularjs.Route -Version 1.8.2
+    ```
+
+  
 
 5. Start the project using F5 or Debug > Start Debugging in Visual Studio.
 
