@@ -1,5 +1,4 @@
-# ProductsWebApi
-
+# MVC Crud Operation With C#
 ## Getting Started
 
 This project is developed using Angular.js Core, Angular.js Route, and Entity Framework. Essentially, it allows performing CRUD operations for products.
